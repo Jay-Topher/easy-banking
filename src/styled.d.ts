@@ -17,5 +17,21 @@ declare module "styled-components" {
         white: string;
       };
     };
+
+    screens: {
+      xl: string;
+      lg: string;
+      md: string;
+      sm: string;
+      xs: string;
+    };
+
+    breakpoints: {
+      xl: string;
+      lg: string;
+      md: string;
+      sm: string;
+      xs: string;
+    }
   }
 }
