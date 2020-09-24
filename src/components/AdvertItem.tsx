@@ -47,7 +47,6 @@ const Card = styled.div`
 
   &:hover {
     transform: scale(1.1, 1.1);
-    
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
@@ -77,6 +76,11 @@ const CardDescription = styled.div`
     font-weight: 400;
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
+    transition: color 0.3s ease-out;
+
+    &:hover {
+      color: ${theme.colors.primary.limeGreen};
+    }
   }
 
   p {
