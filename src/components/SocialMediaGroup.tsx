@@ -37,6 +37,12 @@ const SocialMediaContainer = styled.div`
 `;
 
 const A = styled.a`
+
+  svg {
+    path {
+      transition: fill 0.3s ease-in-out;
+    }
+  }
   &:hover {
     svg {
       & path {

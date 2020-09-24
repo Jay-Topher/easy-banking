@@ -41,12 +41,13 @@ const Card = styled.div`
   border-radius: 0.4rem;
   flex-wrap: wrap;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
   /* transition: border 0.4s ease-out; */
 
   &:hover {
     transform: scale(1.1, 1.1);
+    box-shadow: 0px 6px 21px 0px rgba(0, 0, 0, 0.15);
   }
 
   @media (max-width: ${theme.breakpoints.lg}) {
