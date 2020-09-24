@@ -55,4 +55,5 @@ const AdvertsMain = styled.section`
 const Flexed = styled(FlexedContainer)`
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
