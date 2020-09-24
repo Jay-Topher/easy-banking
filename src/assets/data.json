@@ -53,5 +53,15 @@
       "author": "Claire Robinson",
       "description": "After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."
     }
+  ],
+  "linkGroup1": [
+    {"name": "About Us", "link": "/"},
+    {"name": "Contact", "link": "/"},
+    {"name": "Blog", "link": "/"}
+  ],
+  "linkGroup2": [
+    {"name": "Careers", "link": "/"},
+    {"name": "Support", "link": "/"},
+    {"name": "Privacy Policy", "link": "/"}
   ]
 }
