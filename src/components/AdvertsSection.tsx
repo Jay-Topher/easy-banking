@@ -49,6 +49,10 @@ const AdvertsMain = styled.section`
     font-weight: 400;
     font-size: 2.5rem;
     margin-bottom: 1.9rem;
+
+    @media only screen and (max-width: ${myTheme.breakpoints.lg}) {
+      text-align: center;
+    }
   }
 `;
 
