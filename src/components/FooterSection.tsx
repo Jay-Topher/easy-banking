@@ -16,10 +16,10 @@ const FooterSection: React.FC<FooterSectionProps> = () => {
     <Footer>
       <Container>
         <Flexed>
-          <div>
+          <Div>
             <WhiteLogo />
             <SocialMediaGroup />
-          </div>
+          </Div>
           <FooterLinkGroup links={linkGroup1} />
           <FooterLinkGroup links={linkGroup2} />
           <Flex>
@@ -42,16 +42,19 @@ const Footer = styled.footer`
 
 const Flexed = styled(FlexedContainer)`
   justify-content: flex-start;
+
+  @media (max-width: ${myTheme.breakpoints.md}) {
+    flex-direction: column;
+  }
 `;
 
 const Flex = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   font-size: 0.9rem;
 
-  @media (max-width: ${myTheme.breakpoints.lg}) {
+  @media (min-width: ${myTheme.breakpoints.lg}) {
     margin-left: auto;
     align-items: flex-end;
   }
@@ -61,3 +64,12 @@ const Flex = styled.div`
     color: ${myTheme.colors.neutral.grayishBlue};
   }
 `;
+
+const Div = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media (max-width: ${myTheme.breakpoints.md}) {
+    margin-bottom: 1rem;
+    align-items: canter;
+  }
+`
