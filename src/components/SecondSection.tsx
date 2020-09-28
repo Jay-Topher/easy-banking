@@ -83,4 +83,11 @@ const TitleContainer = styled.div`
       display: block;
     }
   }
+
+  @media only screen and (max-width: ${theme.breakpoints.md}) {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 11rem;
+  }
 `;
