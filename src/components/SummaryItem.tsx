@@ -30,18 +30,19 @@ const SummaryContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
 
-  @media (max-width: ${theme.breakpoints.lg}) {
+  @media (min-width: ${theme.breakpoints.lg}) {
     /* flex: 1; */
     align-items: flex-start;
     /* padding-right: 1.8rem; */
     width: 22%;
-
+    text-align: left;
   }
 
-  @media (max-width: ${theme.breakpoints.md}) {
+  @media (min-width: ${theme.breakpoints.md}) {
     flex-wrap: wrap;
     width: 44%;
   }
