@@ -22,7 +22,6 @@ const HeroSection = () => {
           </TextWrapper>
           <InviteButton href="/">Request Invite</InviteButton>
         </TextChild>
-        
         <ImageContainer>
           <Image src={mobile} alt="mobile mockup" />
         </ImageContainer>
@@ -38,54 +37,16 @@ const H1 = styled.h1`
   font-size: 60px;
   margin-top: 0px;
   margin-bottom: 20px;
+
+  @media only screen and (max-width: ${theme.breakpoints.md}) {
+    font-size: 40px;
+  }
 `;
-
-// const ImageContainer = styled.div`
-//   flex: 1;
-//   margin-left: 20px;
-//   position: absolute;
-//   right: -200px;
-//   width: 50rem;
-//   /* background-image: url(${bgImage});
-//   background-repeat: no-repeat;
-//   background-size: 122%;
-//   background-position: center top; */
-//   /* background-image: url(${mobile});
-//   background-repeat: no-repeat;
-//   background-position: center center;
-//   background-size: cover; */
-//   /* min-height: 44rem; */
-
-//   /* &::before {
-//     content: "";
-//     position: absolute;
-//     height: 100%;
-//     background-image: url(${bgImage});
-//     background-repeat: no-repeat;
-//     background-size: 122%;
-//     width: 150%;
-//     display: inline-block;
-//     background-position: 0% 93%;
-//   } */
-
-//   /* &::after {
-//     content: "";
-//     position: absolute;
-//     left: 30%;
-//     height: 122%;
-//     background-image: url(${mobile});
-//     background-repeat: no-repeat;
-//     background-size: 110%;
-//     width: 100%;
-//     display: inline-block;
-//     background-position: 20% 83%;
-//   } */
-// `;
 
 const Image = styled.img`
   width: 100%;
   position: relative;
-  top: 20px;
+  top: -120px;
   right: -130px;
   /* height: 100%; */
 `;
@@ -104,10 +65,28 @@ const TextChild = styled.div`
   /* width: 50%; */
   flex: 1;
   margin-right: 20px;
+  margin-top: -10rem;
+  text-align: left;
+
+  @media only screen and (max-width: ${theme.breakpoints.md}) {
+    width: 90%;
+    order: 2;
+    margin: 0 auto;
+    text-align: center;
+  }
 `;
 
 const TextWrapper = styled.div`
-  width: 550px;
+  @media only screen and (min-width: ${theme.breakpoints.md}) {
+    width: 30rem;  
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    color: ${theme.colors.neutral.grayishBlue};
+    line-height: 1.5rem;
+  }
 `;
 
 const Flexed = styled(FlexedContainer)`
@@ -118,11 +97,22 @@ const Flexed = styled(FlexedContainer)`
   background-image: url(${bgImage});
   background-repeat: no-repeat;
   background-position: 360% 70%;
+  width: 100%;
+  flex-wrap: wrap;
   /* overflow: hidden; */
+
+  @media only screen and (max-width: ${theme.breakpoints.md}) {
+    padding-left: 0;
+  }
 `;
 
 const ImageContainer = styled.div`
   /* width: 50rem; */
   /* height: 50rem; */
   overflow: hidden;
+
+  @media only screen and (max-width: ${theme.breakpoints.md}) {
+    order: 1;
+    margin-bottom: 2rem;
+  }
 `;
