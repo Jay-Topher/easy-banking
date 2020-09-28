@@ -33,7 +33,7 @@ export default AdvertItem;
 
 const Card = styled.div`
   background-color: ${theme.colors.neutral.white};
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -43,16 +43,15 @@ const Card = styled.div`
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
-  /* transition: border 0.4s ease-out; */
 
-  &:hover {
+  @media (min-width: ${theme.breakpoints.lg}) {
+    width: 22%;
+    margin: 0;
+
+    &:hover {
     transform: scale(1.1, 1.1);
     box-shadow: 0px 6px 21px 0px rgba(0, 0, 0, 0.15);
   }
-
-  @media (max-width: ${theme.breakpoints.lg}) {
-    width: 22%;
-    margin: 0;
   }
 `;
 
