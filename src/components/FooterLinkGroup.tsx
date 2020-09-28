@@ -27,9 +27,10 @@ const LinkGroup = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
   
 
-  @media (max-width: ${theme.breakpoints.lg}) {
+  @media (min-width: ${theme.breakpoints.lg}) {
     align-items: flex-start;
     margin-left: 8rem;
   }
